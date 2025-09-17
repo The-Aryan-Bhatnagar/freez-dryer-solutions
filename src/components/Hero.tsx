@@ -18,15 +18,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center lg:text-left max-w-3xl">
-          <h1 className="hero-text mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">
             Freez Home Service Center
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4 animate-fade-in">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 animate-fade-in">
             Professional Corrugated Box Dryer Manufacturing
           </h2>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in">
+          <p className="text-lg md:text-xl text-foreground/80 mb-8 leading-relaxed animate-fade-in">
             Led by <span className="font-semibold">Anand Bhatnagar</span>, we specialize in designing and manufacturing 
             high-quality corrugated box dryers with cutting-edge technology and reliable performance.
           </p>
@@ -37,13 +37,13 @@ const Hero = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent text-lg px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call 9837439412
+              Call Now
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4"
             >
               View Products
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -55,8 +55,8 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary-foreground rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-foreground rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>

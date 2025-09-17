@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>info@freezhomeservice.com</span>
+                <span>purvi.freezhome@gmail.com</span>
               </div>
             </div>
           </div>
@@ -59,7 +59,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mb-6">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/anand-bhatnagar-220b38103/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg flex items-center justify-center transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
