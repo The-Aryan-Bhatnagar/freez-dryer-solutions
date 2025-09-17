@@ -25,12 +25,24 @@ const Contact = () => {
         message: formData.get('message') as string,
       };
 
+      // Save to database
       const { error } = await supabase
         .from('inquiries')
         .insert([inquiryData]);
 
       if (error) {
         throw error;
+      }
+
+      // Send email notifications
+      try {
+        await supabase.functions.invoke('send-inquiry-email', {
+          body: inquiryData
+        });
+        console.log('Email notifications sent successfully');
+      } catch (emailError) {
+        console.error('Email notification failed:', emailError);
+        // Don't fail the form submission if email fails
       }
 
       toast({
