@@ -4,46 +4,40 @@ import heroImage from "@/assets/hero-dryer.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-hero-gradient">
+    <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage}
           alt="Industrial corrugated box dryer manufacturing equipment"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-hero-gradient opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-800/70 to-slate-900/80"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center lg:text-left max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">
-            Freez Home Service Center
+        <div className="text-center max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in leading-tight">
+            Professional Corrugated Box Dryer Manufacturing
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 animate-fade-in">
-            Professional Corrugated Box Dryer Manufacturing
-          </h2>
-          
-          <p className="text-lg md:text-xl text-foreground/80 mb-8 leading-relaxed animate-fade-in">
-            Led by <span className="font-semibold">Anand Bhatnagar</span>, we specialize in designing and manufacturing 
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed animate-fade-in max-w-4xl mx-auto">
+            Led by <span className="font-semibold text-white">Anand Bhatnagar</span>, Freez Home Service Center specializes in designing and manufacturing 
             high-quality corrugated box dryers with cutting-edge technology and reliable performance.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center animate-scale-in">
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent text-lg px-8 py-4"
+              className="bg-accent hover:bg-accent/90 text-white shadow-accent text-lg px-12 py-4 font-semibold"
             >
-              <Phone className="w-5 h-5 mr-2" />
               Call Now
             </Button>
             
             <Button 
-              variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4"
+              className="bg-primary hover:bg-primary/90 text-white text-lg px-12 py-4 font-semibold"
             >
               View Products
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -55,8 +49,8 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce">
-          <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-foreground rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
