@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone, Thermometer, Settings, Zap } from "lucide-react";
-import productsImage from "@/assets/products-showcase.jpg";
+import productsImage from "@/assets/freez-service-center-dryer.jpg";
 
 const Products = () => {
   const features = [
@@ -55,7 +55,7 @@ const Products = () => {
           <div className="animate-fade-in">
             <img 
               src={productsImage}
-              alt="Corrugated box dryer manufacturing equipment showcase"
+              alt="Freez Home Service Center industrial dryer unit and manufacturing facility"
               className="w-full h-96 object-cover rounded-lg shadow-professional"
             />
           </div>
