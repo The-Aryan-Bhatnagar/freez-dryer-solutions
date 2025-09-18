@@ -56,7 +56,7 @@ const Products = () => {
             <img 
               src={productsImage}
               alt="Freez Home Service Center industrial dryer unit and manufacturing facility"
-              className="w-full h-96 object-cover rounded-lg shadow-professional"
+              className="w-full object-cover rounded-lg shadow-professional"
             />
           </div>
 
