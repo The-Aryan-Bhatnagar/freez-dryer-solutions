@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, Image as ImageIcon, Phone } from "lucide-react";
+import modelAImage from "@/assets/model-a-dryer.jpg";
+import finishedProductImage from "@/assets/finished-product-dryer.jpg";
 
 const Gallery = () => {
   // Placeholder gallery items - in a real implementation, these would be actual images/videos
@@ -7,7 +9,8 @@ const Gallery = () => {
     {
       type: "image",
       title: "Corrugated Box Dryer - Model A",
-      description: "High-capacity industrial dryer in operation"
+      description: "High-capacity industrial dryer in operation",
+      image: modelAImage
     },
     {
       type: "video",
@@ -32,7 +35,8 @@ const Gallery = () => {
     {
       type: "image",
       title: "Finished Products",
-      description: "Ready-to-ship dryer units"
+      description: "Ready-to-ship dryer units",
+      image: finishedProductImage
     }
   ];
 
@@ -55,13 +59,19 @@ const Gallery = () => {
               className="industrial-card overflow-hidden group cursor-pointer hover:scale-105 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Placeholder Media Container */}
-              <div className="relative h-48 bg-muted flex items-center justify-center group-hover:bg-muted/80 transition-colors">
+              {/* Media Container */}
+              <div className="relative h-48 bg-muted flex items-center justify-center group-hover:bg-muted/80 transition-colors overflow-hidden">
                 {item.type === "video" ? (
                   <div className="flex flex-col items-center">
                     <Play className="w-12 h-12 text-accent mb-2" />
                     <span className="text-sm text-muted-foreground">Video</span>
                   </div>
+                ) : item.image ? (
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                 ) : (
                   <div className="flex flex-col items-center">
                     <ImageIcon className="w-12 h-12 text-primary mb-2" />
