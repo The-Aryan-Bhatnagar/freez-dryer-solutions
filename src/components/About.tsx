@@ -1,5 +1,5 @@
 import { CheckCircle, Users, Award, Wrench } from "lucide-react";
-import anandImage from "@/assets/anand-bhatnagar.jpg";
+import anandImage from "@/assets/anand-bhatnagar-new.jpg";
 
 const About = () => {
   const achievements = [
