@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-dryer.jpg";
+import heroImage from "@/assets/freez-dryer-hero.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage}
-          alt="Industrial corrugated box dryer manufacturing equipment"
+          alt="Freez Home Service Center industrial dryer manufacturing facility"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-800/70 to-slate-900/80"></div>
